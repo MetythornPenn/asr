@@ -839,6 +839,7 @@ class ASRDataset(torch.utils.data.Dataset):
             power=2.0,
             center=False,
         )
+
         self.to_db = torchaudio.transforms.AmplitudeToDB(stype="power")
 
     def __len__(self) -> int:
